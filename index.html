@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Naib</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --accent: #0077cc;
+    }
+
+    body.dark-mode {
+      --bg: #111111;
+      --text: #ffffff;
+      --accent: #4dc3ff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--accent);
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #eee;
+      padding: 0.5em;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
+    .post {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 2em;
+      padding-bottom: 1em;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      background-color: #f3f3f3;
+      color: #555;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleMode()">☀️ / 🌙</button>
+  <header>
+    <h1>Blog Naib</h1>
+    <p>Berbagi cerita, pemikiran, dan pengalaman hidup</p>
+  </header>
+
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <div class="post">
+      <h2>Judul Postingan Pertama</h2>
+      <p><small>Diposting pada 23 Juni 2025</small></p>
+      <p>Ini adalah ringkasan singkat dari postingan pertama. Kamu bisa menulis apa pun di sini tentang topik yang kamu suka.</p>
+    </div>
+    <div class="post">
+      <h2>Judul Postingan Kedua</h2>
+      <p><small>Diposting pada 20 Juni 2025</small></p>
+      <p>Postingan kedua ini bisa tentang hobi, teknologi, atau apa pun yang kamu ingin bagikan ke dunia.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Blog Naib. Dibuat dengan ❤️ dan GitHub Pages.
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
